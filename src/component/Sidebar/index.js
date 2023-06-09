@@ -1,6 +1,6 @@
 import './index.scss'
 import { useState } from 'react'
-import LogoS from '../../assets/images/logo-s.png'
+import Logos from '../../assets/images/logo-s.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -28,7 +28,7 @@ const Sidebar = () => {
         className="logo"
         to="/"
         onClick={() => setShowNav(false)}>
-        <img src={LogoS} alt="Logo" />
+        <img src={Logos} alt="Logo" />
         <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
       </Link>
       <nav className={showNav ? 'mobile-show' : ''}>
@@ -96,7 +96,7 @@ const Sidebar = () => {
             />
           </a>
         </li>
-        <li>
+        {/* <li>
           <a
             href="https://www.youtube.com/channel/UCBu5ulO4d-d47lAVybpRTkw"
             rel="noreferrer"
@@ -108,8 +108,8 @@ const Sidebar = () => {
               className="anchor-icon"
             />
           </a>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <a href="skype:live:bobangajicsm" rel="noreferrer" target="_blank">
             <FontAwesomeIcon
               icon={faSkype}
@@ -117,7 +117,7 @@ const Sidebar = () => {
               className="anchor-icon"
             />
           </a>
-        </li>
+        </li> */}
       </ul>
       <FontAwesomeIcon 
           onClick={() => setShowNav(true)}
